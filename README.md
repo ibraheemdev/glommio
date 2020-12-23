@@ -28,10 +28,10 @@ unlike its counterparts it doesn't use helper threads anywhere.
 Using Glommio is not hard if you are familiar with rust async. All you have to do is:
 
 ```rust
-    use glommio::prelude::*;
-    LocalExecutorBuilder::new().spawn(|| async move {
-        /// your code here
-    }).unwrap();
+use glommio::prelude::*;
+LocalExecutorBuilder::new().spawn(|| async move {
+    /// your code here
+}).unwrap();
 ```
 
 For more details check out our [docs
